@@ -1,0 +1,73 @@
+@import '../../styles/abstract/variables.scss';
+
+
+.box-menu {
+    nav {
+        position: relative;
+        background-color: $color-black;
+        padding: 20px 22px;
+
+        .logo_menu {
+            display: flex;
+            justify-content: space-between;
+            line-height: 0;
+
+            .menu {
+                color: $color-green;
+            }
+        }
+
+        .close-menu {
+            position: absolute;
+            right: 22px;
+            top: 20px;
+            color: $color-green;
+        }
+
+        ul {
+            position: absolute;
+            top: 0;
+            right: 0;
+            flex-direction: column;
+            list-style: none;
+            background-color: $color-dark_grey;
+            padding: 56px 32px;
+
+            li {
+                a {
+                    font: normal 400 1rem $font-primary;
+                    text-decoration: none;
+                    color: $color-white;
+                }
+
+                &:nth-child(-n+4) {
+                    border-bottom: 1px solid $color-grey;
+                    padding-bottom: .8rem;
+                    margin-bottom: .8rem;
+                }
+            }
+        }
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        padding: 24px 30px;
+        font-size: 1rem;
+
+        input {
+            width: auto;
+            border: 1px solid $color-dark-grey;
+            outline: none;
+            padding: 10px 12px;
+        }
+        input[type="text"] {
+            width: 70%;
+        }
+        input[type="submit"] {
+            background-color: inherit;
+        }
+    }
+}
