@@ -12,6 +12,10 @@
             justify-content: space-between;
             line-height: 0;
 
+            img {
+                cursor: pointer;
+            }
+
             .menu {
                 color: $color-green;
             }
@@ -28,18 +32,13 @@
             position: absolute;
             top: 0;
             right: 0;
+            display: none;
             flex-direction: column;
             list-style: none;
             background-color: $color-dark_grey;
             padding: 56px 32px;
 
             li {
-                a {
-                    font: normal 400 1rem $font-primary;
-                    text-decoration: none;
-                    color: $color-white;
-                }
-
                 &:nth-child(-n+4) {
                     border-bottom: 1px solid $color-grey;
                     padding-bottom: .8rem;
@@ -58,16 +57,78 @@
         font-size: 1rem;
 
         input {
-            width: auto;
-            border: 1px solid $color-dark-grey;
+            border: 2px solid $color-dark-grey;
             outline: none;
             padding: 10px 12px;
         }
+
         input[type="text"] {
             width: 70%;
         }
+
         input[type="submit"] {
             background-color: inherit;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media screen and (min-width: 950px) {
+    .box-menu {
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color-black;
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+            .logo_menu {
+                .menu {
+                    display: none;
+                }
+            }
+
+            ul {
+                position: static;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+                background-color: inherit;
+                padding: 0;
+
+                li {
+                    &:nth-child(-n+4) {
+                        padding-bottom: 0;
+                        border-bottom: 0;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .close-menu {
+                    display: none;
+
+                }
+            }
+        }
+    }
+
+
+    form {
+        width: 40%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        input[type="submit"] {
+            justify-content: flex-end;
+            text-align: right;
+            color: $color-white;
         }
     }
 }

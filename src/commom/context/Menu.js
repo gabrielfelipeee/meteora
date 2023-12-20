@@ -12,7 +12,7 @@ MenuContext.displayName = "Menu";
 const MenuProvider = ({ children }) => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [logo, setLogo] = useState('');
-    const [displayMenu, setDisplayMenu] = useState("none");
+    const [displayMenu, setDisplayMenu] = useState("");
 
 
     useEffect(() => {
@@ -28,9 +28,9 @@ const MenuProvider = ({ children }) => {
     }, []);
 
     useEffect(() => {
-        if (windowWidth <= 360) {
+        if (windowWidth <= 950) {
             setLogo(logoMobile);
-        } else if (windowWidth <= 768) {
+        } else if (windowWidth <= 1440) {
             setLogo(logoTablet);
         } else {
             setLogo(logoDesktop);
@@ -39,7 +39,7 @@ const MenuProvider = ({ children }) => {
 
 
     const toggleMenu = () => {
-        setDisplayMenu(displayMenu => displayMenu === "none" || displayMenu === "flex" ? displayMenu === "flex" : "none");
+        setDisplayMenu(display => display === "" || display === "none" ? display = "flex" : "none")
     };
 
 
@@ -61,11 +61,12 @@ const MenuProvider = ({ children }) => {
 
 
 const useMenuContext = () => {
-    const { logo, toggleMenu, displayMenu } = useContext(MenuContext);
+    const { logo, toggleMenu, displayMenu, windowWidth } = useContext(MenuContext);
     return {
         logo,
         displayMenu,
-        toggleMenu
+        toggleMenu,
+        windowWidth
     };
 };
 

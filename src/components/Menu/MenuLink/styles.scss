@@ -1,0 +1,35 @@
+@import '../../../styles/abstract/variables.scss';
+
+.box-menu-link {
+    position: relative;
+    font-size: .9rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: $color-white;
+    transition: .8s;
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 0;
+        background-color: $color-green;
+    }
+
+    &:hover {
+        color: $color-green;
+    }
+
+    &.active::after {
+        transition: .8s;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .box-menu-link {
+        font-size: 1rem;
+    }
+}
