@@ -1,0 +1,30 @@
+@import '../../styles/abstract/variables.scss';
+
+.box-banner {
+    position: relative;
+    
+    .image {
+        img {
+            width: 100%;
+            margin-top: -3px;
+            cursor: all-scroll;
+        }
+    }
+
+    .arrows {
+        position: absolute;
+        display: flex;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 32px;
+        color: $color-white;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .arrow-left {
+        left: 40px;
+    }
+    .arrow-right {
+        right: 40px;
+    }
+}
