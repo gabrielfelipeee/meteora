@@ -1,0 +1,394 @@
+{
+    "categories": [
+        {
+            "name": "Camisetas",
+            "products": [
+                {
+                    "name": "Camiseta Conforto",
+                    "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
+                    "price": 70,
+                    "image": "https://images.pexels.com/photos/7319172/pexels-photo-7319172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                },
+                {
+                    "name": "Camiseta Estampada",
+                    "description": "Camiseta com estampa floral. Feita de material respirável, ideal para dias quentes.",
+                    "price": 55,
+                    "image": ""
+                },
+                {
+                    "name": "Camiseta Listrada",
+                    "description": "Camiseta de listras coloridas. Confeccionada em algodão macio e confortável.",
+                    "price": 60,
+                    "image": ""
+                },
+                {
+                    "name": "Regata Básica",
+                    "description": "Regata em cores diversas. Ideal para atividades esportivas ou uso casual.",
+                    "price": 45,
+                    "image": ""
+                },
+                {
+                    "name": "Camiseta Polo",
+                    "description": "Polo elegante e versátil. Feita com tecido de alta qualidade.",
+                    "price": 75,
+                    "image": ""
+                },
+                {
+                    "name": "Camiseta Manga Longa",
+                    "description": "Camiseta de manga longa em cores variadas. Confortável e estilosa para o inverno.",
+                    "price": 65,
+                    "image": ""
+                },
+                {
+                    "name": "Camiseta Tie-Dye",
+                    "description": "Camiseta tie-dye em tons vibrantes. Cada peça é única.",
+                    "price": 50,
+                    "image": ""
+                },
+                {
+                    "name": "Camiseta Com Estampa Geométrica",
+                    "description": "Camiseta com estampa geométrica moderna. Tecido macio e durável.",
+                    "price": 58,
+                    "image": ""
+                },
+                {
+                    "name": "Camiseta Esportiva",
+                    "description": "Camiseta para prática esportiva. Tecnologia que absorve o suor.",
+                    "price": 68,
+                    "image": ""
+                },
+                {
+                    "name": "Camiseta Oversized",
+                    "description": "Camiseta estilo oversized, confortável e estilosa.",
+                    "price": 62,
+                    "image": ""
+                }
+            ]
+        },
+        {
+            "name": "Bolsas",
+            "products": [
+                {
+                    "name": "Bolsa Tiracolo",
+                    "description": "Bolsa tiracolo em couro sintético. Ideal para o dia a dia.",
+                    "price": 90,
+                    "image": ""
+                },
+                {
+                    "name": "Bolsa de Praia",
+                    "description": "Bolsa de praia espaçosa. Feita com material resistente à água.",
+                    "price": 75,
+                    "image": ""
+                },
+                {
+                    "name": "Bolsa Transversal",
+                    "description": "Bolsa transversal elegante, perfeita para ocasiões casuais.",
+                    "price": 85,
+                    "image": ""
+                },
+                {
+                    "name": "Mochila Estilosa",
+                    "description": "Mochila moderna com compartimentos amplos. Design estiloso e prático.",
+                    "price": 110,
+                    "image": ""
+                },
+                {
+                    "name": "Bolsa Tote",
+                    "description": "Bolsa tote espaçosa e versátil. Ideal para o trabalho ou passeios.",
+                    "price": 95,
+                    "image": ""
+                },
+                {
+                    "name": "Bolsa Carteiro",
+                    "description": "Bolsa carteiro em material resistente. Design funcional e moderno.",
+                    "price": 80,
+                    "image": ""
+                },
+                {
+                    "name": "Bolsa Satchel",
+                    "description": "Bolsa satchel com alça ajustável. Perfeita para looks casuais.",
+                    "price": 70,
+                    "image": ""
+                },
+                {
+                    "name": "Clutch Elegante",
+                    "description": "Clutch elegante para eventos formais. Detalhes refinados e acabamento impecável.",
+                    "price": 100,
+                    "image": ""
+                },
+                {
+                    "name": "Bolsa de Couro Vintage",
+                    "description": "Bolsa de couro vintage com estilo retrô. Design exclusivo e durável.",
+                    "price": 120,
+                    "image": ""
+                },
+                {
+                    "name": "Bolsa de Viagem",
+                    "description": "Bolsa de viagem resistente. Compartimentos especiais para organizar itens pessoais.",
+                    "price": 130,
+                    "image": ""
+                }
+            ]
+        },
+        {
+            "name": "Calçados",
+            "products": [
+                {
+                    "name": "Tênis Esportivo",
+                    "description": "Tênis leve e confortável para atividades esportivas. Tecnologia de amortecimento avançada.",
+                    "price": 120,
+                    "image": ""
+                },
+                {
+                    "name": "Sapatênis Casual",
+                    "description": "Sapatênis versátil para uso casual. Combina estilo e conforto.",
+                    "price": 90,
+                    "image": ""
+                },
+                {
+                    "name": "Sandália Slide",
+                    "description": "Sandália slide para momentos relaxantes. Confortável e fácil de calçar.",
+                    "price": 50,
+                    "image": ""
+                },
+                {
+                    "name": "Botas de Couro",
+                    "description": "Botas de couro robustas para uso diário. Duráveis e resistentes.",
+                    "price": 150,
+                    "image": ""
+                },
+                {
+                    "name": "Sapato Social",
+                    "description": "Sapato social elegante para ocasiões formais. Design clássico e refinado.",
+                    "price": 110,
+                    "image": ""
+                },
+                {
+                    "name": "Chinelo Anatómico",
+                    "description": "Chinelo anatômico para conforto dos pés. Ideal para descanso e lazer.",
+                    "price": 35,
+                    "image": ""
+                },
+                {
+                    "name": "Tênis de Corrida",
+                    "description": "Tênis especializado para corridas. Amortecimento e suporte excelentes.",
+                    "price": 140,
+                    "image": ""
+                },
+                {
+                    "name": "Sapatilha Feminina",
+                    "description": "Sapatilha feminina elegante e confortável. Versátil para diversas ocasiões.",
+                    "price": 80,
+                    "image": ""
+                },
+                {
+                    "name": "Alpargata Unissex",
+                    "description": "Alpargata unissex em material respirável. Leve e casual.",
+                    "price": 60,
+                    "image": ""
+                },
+                {
+                    "name": "Mocassim Clássico",
+                    "description": "Mocassim clássico em couro legítimo. Estilo atemporal e sofisticado.",
+                    "price": 100,
+                    "image": ""
+                }
+            ]
+        },
+        {
+            "name": "Calças",
+            "products": [
+                {
+                    "name": "Calça Jeans Skinny",
+                    "description": "Calça jeans slim fit com lavagem moderna. Confortável e estilosa.",
+                    "price": 80,
+                    "image": ""
+                },
+                {
+                    "name": "Calça Social Slim",
+                    "description": "Calça social slim para ocasiões formais. Corte elegante e acabamento refinado.",
+                    "price": 90,
+                    "image": ""
+                },
+                {
+                    "name": "Calça Cargo",
+                    "description": "Calça cargo em tecido resistente. Bolsos espaçosos e design utilitário.",
+                    "price": 75,
+                    "image": ""
+                },
+                {
+                    "name": "Calça Jogger",
+                    "description": "Calça jogger confortável e moderna. Ideal para um visual descontraído.",
+                    "price": 65,
+                    "image": ""
+                },
+                {
+                    "name": "Calça Legging",
+                    "description": "Calça legging fitness para atividades esportivas. Confortável e elástica.",
+                    "price": 50,
+                    "image": ""
+                },
+                {
+                    "name": "Calça Linho",
+                    "description": "Calça de linho leve e arejada. Perfeita para dias quentes.",
+                    "price": 70,
+                    "image": ""
+                },
+                {
+                    "name": "Calça Flare",
+                    "description": "Calça flare elegante e feminina. Destaca a silhueta e combina com diversos estilos.",
+                    "price": 85,
+                    "image": ""
+                },
+                {
+                    "name": "Calça Cintura Alta",
+                    "description": "Calça cintura alta em tecido macio. Modelagem que valoriza a silhueta.",
+                    "price": 75,
+                    "image": ""
+                },
+                {
+                    "name": "Calça Moletom",
+                    "description": "Calça moletom confortável para uso casual. Cós elástico e bolsos laterais.",
+                    "price": 55,
+                    "image": ""
+                },
+                {
+                    "name": "Calça Pantalona",
+                    "description": "Calça pantalona fluida e elegante. Ideal para looks sofisticados.",
+                    "price": 95,
+                    "image": ""
+                }
+            ]
+        },
+        {
+            "name": "Casacos",
+            "products": [
+                {
+                    "name": "Jaqueta Jeans",
+                    "description": "Jaqueta jeans clássica e versátil. Ideal para diversas estações do ano.",
+                    "price": 100,
+                    "image": ""
+                },
+                {
+                    "name": "Sobretudo Longo",
+                    "description": "Sobretudo longo e elegante. Perfeito para dias frios.",
+                    "price": 150,
+                    "image": ""
+                },
+                {
+                    "name": "Parka Resistente à Água",
+                    "description": "Parka resistente à água e vento. Confortável e funcional.",
+                    "price": 120,
+                    "image": ""
+                },
+                {
+                    "name": "Blazer Clássico",
+                    "description": "Blazer clássico para looks formais. Acabamento refinado.",
+                    "price": 110,
+                    "image": ""
+                },
+                {
+                    "name": "Moletom com Capuz",
+                    "description": "Moletom com capuz para estilo casual. Confortável e estiloso.",
+                    "price": 80,
+                    "image": ""
+                },
+                {
+                    "name": "Casaco de Pele Sintética",
+                    "description": "Casaco de pele sintética elegante. Opção vegana e estilosa.",
+                    "price": 130,
+                    "image": ""
+                },
+                {
+                    "name": "Trench Coat",
+                    "description": "Trench coat clássico e atemporal. Perfeito para diversas ocasiões.",
+                    "price": 140,
+                    "image": ""
+                },
+                {
+                    "name": "Casaco Acolchoado",
+                    "description": "Casaco acolchoado para dias frios. Quente e confortável.",
+                    "price": 95,
+                    "image": ""
+                },
+                {
+                    "name": "Jaqueta Corta-Vento",
+                    "description": "Jaqueta corta-vento esportiva. Ideal para atividades ao ar livre.",
+                    "price": 75,
+                    "image": ""
+                },
+                {
+                    "name": "Cardigã de Tricô",
+                    "description": "Cardigã de tricô macio e versátil. Ótimo para meia-estação.",
+                    "price": 70,
+                    "image": ""
+                }
+            ]
+        },
+        {
+            "name": "Óculos",
+            "products": [
+                {
+                    "name": "Óculos de Sol Aviador",
+                    "description": "Óculos de sol estilo aviador. Proteção UV e design clássico.",
+                    "price": 80,
+                    "image": "https://images.pexels.com/photos/1071878/pexels-photo-1071878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                },
+                {
+                    "name": "Óculos Retrô",
+                    "description": "Óculos de armação redonda com estilo retrô. Versátil e estiloso.",
+                    "price": 70,
+                    "image": ""
+                },
+                {
+                    "name": "Óculos de Grau Tradicional",
+                    "description": "Óculos de grau com armação tradicional. Leve e confortável.",
+                    "price": 100,
+                    "image": "https://images.pexels.com/photos/2530391/pexels-photo-2530391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                },
+                {
+                    "name": "Óculos Esportivo",
+                    "description": "Óculos esportivo com lentes polarizadas. Ideal para atividades ao ar livre.",
+                    "price": 90,
+                    "image": "https://images.pexels.com/photos/147641/pexels-photo-147641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                },
+                {
+                    "name": "Óculos Gatinho",
+                    "description": "Óculos de estilo gatinho com personalidade. Combinação de elegância e modernidade.",
+                    "price": 75,
+                    "image": ""
+                },
+                {
+                    "name": "Óculos Coração",
+                    "description": "Óculos em formato de coração. Design icônico e atemporal.",
+                    "price": 85,
+                    "image": "https://images.pexels.com/photos/6479569/pexels-photo-6479569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                },
+                {
+                    "name": "Óculos Oversized",
+                    "description": "Óculos oversized para um visual ousado. Proteção UV e estilo contemporâneo.",
+                    "price": 95,
+                    "image": ""
+                },
+                {
+                    "name": "Óculos de Natação",
+                    "description": "Óculos de natação confortáveis e ajustáveis. Proteção antiembaçante.",
+                    "price": 45,
+                    "image": ""
+                },
+                {
+                    "name": "Óculos Clubmaster",
+                    "description": "Óculos estilo clubmaster elegante. Armação leve e resistente.",
+                    "price": 80,
+                    "image": ""
+                },
+                {
+                    "name": "Óculos Quadrado Moderno",
+                    "description": "Óculos de armação quadrada moderna. Estilo contemporâneo e urbano.",
+                    "price": 65,
+                    "image": ""
+                }
+            ]
+        }
+    ]
+}

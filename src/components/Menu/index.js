@@ -3,7 +3,7 @@ import { IoMenu, IoClose } from "react-icons/io5";
 import './styles.scss';
 
 
-import { useMenuContext } from "../../commom/context/Menu_Banner";
+import { useMenuBannerContext } from "../../commom/context/Menu_Banner";
 
 
 import MenuLink from "./MenuLink";
@@ -11,7 +11,7 @@ import MenuLink from "./MenuLink";
 
 const Menu = () => {
     const navigate = useNavigate();
-    const { logo, toggleMenu, displayMenu, windowWidth } = useMenuContext();
+    const { logo, toggleMenu, displayMenu, windowWidth } = useMenuBannerContext();
     const menuItems = [
         { page: 'Início', link: '/' },
         { page: 'Nossas lojas', link: '/nossaslojas' },

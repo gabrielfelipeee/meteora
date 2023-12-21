@@ -10,12 +10,12 @@ import 'swiper/css/effect-fade';
 
 import './styles.scss';
 
-import { useMenuContext } from "../../commom/context/Menu_Banner";
+import { useMenuBannerContext } from "../../commom/context/Menu_Banner";
 
 
 
 const Banner = () => {
-    const { banner1, banner2, banner3 } = useMenuContext();
+    const { banner1, banner2, banner3 } = useMenuBannerContext();
 
     return (
         <div className="box-banner">

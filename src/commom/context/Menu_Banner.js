@@ -19,7 +19,7 @@ import banner3Desktop from '../../assets/Desktop/banner3_1440.png';
 
 
 const MenuBannerContext = createContext();
-MenuBannerContext.displayName = "Menu";
+MenuBannerContext.displayName = "MenuBanner";
 
 const MenuBannerProvider = ({ children }) => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -103,7 +103,7 @@ const MenuBannerProvider = ({ children }) => {
 
 
 
-const useMenuContext = () => {
+const useMenuBannerContext = () => {
     const {
         logo,
         toggleMenu,
@@ -125,4 +125,4 @@ const useMenuContext = () => {
     };
 };
 
-export { MenuBannerProvider, useMenuContext };
+export { MenuBannerProvider, useMenuBannerContext };

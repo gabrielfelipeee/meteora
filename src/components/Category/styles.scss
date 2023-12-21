@@ -1,0 +1,44 @@
+@import '../../styles/abstract/variables.scss';
+
+.box-categories {
+    h1 {
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: $color-dark_grey;
+        text-align: center;
+        margin: 24px 0;
+    }
+
+    ul {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 18px 54px 18px;
+        list-style: none;
+
+        li {
+            transition: .5s ease;
+            cursor: pointer;
+            
+            &:hover {
+                transform: translateY(-8px);
+                transition: .5s ease;
+            }
+
+            img {
+                line-height: 0;
+            }
+            h2 {
+                font-size: 1rem;
+                font-weight: 500;
+                color: $color-white;
+                text-align: center;
+                background-color: $color-black;
+                padding: 8px 16px;
+                margin-top: -5px;
+            }
+        }
+    }
+}
