@@ -1,0 +1,53 @@
+@import '../../styles/abstract/variables.scss';
+
+.box-product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid $color-grey;
+    max-width: 400px;
+    min-height: 100%;
+
+    img {
+        width: 100%;
+        line-height: 0;
+    }
+
+
+    h3 {
+        margin: 13px auto 15px auto;
+    }
+
+    h3,
+    span {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 24px;
+        color: $color-dark_grey;
+        margin-left: 16px;
+    }
+
+    p {
+        font-size: .9rem;
+        font-weight: 400;
+        line-height: 20px;
+        color: $color-dark_grey;
+        margin: 0 16px 16px 16px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 16px;
+        background-color: #9353FF;
+        color: $color-white;
+        border: none;
+        margin: 10px auto 16px 16px;
+        cursor: pointer;
+        transition: background-color .5s ease;
+
+        &:hover {
+            background-color: #6b16ff;
+            transition: background-color .5s ease;
+        }
+    }
+}

@@ -1,7 +1,7 @@
-@import '../../styles/abstract/variables.scss';
+@import '../../../styles/abstract/variables.scss';
 
 .box-categories {
-    h1 {
+    h2 {
         font-size: 1.7rem;
         font-weight: 500;
         color: $color-dark_grey;
@@ -30,7 +30,7 @@
             img {
                 line-height: 0;
             }
-            h2 {
+            h3 {
                 font-size: 1rem;
                 font-weight: 500;
                 color: $color-white;
@@ -39,6 +39,15 @@
                 padding: 8px 16px;
                 margin-top: -5px;
             }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .box-categories {
+        h2 {
+            font-size: 2rem;
         }
     }
 }

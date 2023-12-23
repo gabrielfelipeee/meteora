@@ -1,0 +1,39 @@
+@import '../../styles/abstract/variables.scss';
+
+.box-home {
+
+
+    .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 1.7rem;
+            font-weight: 500;
+            color: $color-dark_grey;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 0px 18px;
+            list-style: none;
+            max-width: 1440px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .box-home {
+        .products {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
+}

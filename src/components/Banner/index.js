@@ -18,7 +18,7 @@ const Banner = () => {
     const { banner1, banner2, banner3 } = useMenuBannerContext();
 
     return (
-        <div className="box-banner">
+        <section className="box-banner">
             <Swiper
                 modules={[Navigation, Pagination, EffectFade, Autoplay]}
                 effect="fade"
@@ -44,7 +44,7 @@ const Banner = () => {
 
             <BiSolidLeftArrow className="arrows arrow-left" />
             <BiSolidRightArrow className="arrows arrow-right" />
-        </div>
+        </section>
     );
 };
 export default Banner;

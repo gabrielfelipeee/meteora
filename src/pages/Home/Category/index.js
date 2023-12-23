@@ -1,9 +1,9 @@
 import './styles.scss';
 
 
-import products from '../../mocks/products.json';
+import products from '../../../mocks/products.json';
 
-import { useCategoriesContext } from '../../commom/context/Categories';
+import { useCategoriesContext } from '../../../commom/context/Categories';
 
 const Category = () => {
     const {
@@ -36,8 +36,8 @@ const Category = () => {
 
 
     return (
-        <div className="box-categories">
-            <h1>Busque por categoria:</h1>
+        <section className="box-categories">
+            <h2>Busque por categoria:</h2>
             <ul>
                 {products.categories.map(category => {
                     return <li key={category.name}>
@@ -45,11 +45,12 @@ const Category = () => {
                             src={getCategory(category.name)}
                             alt={`Foto da categoria ${category.name}`}
                         />
-                        <h2>{category.name}</h2>
+                        <h3>{category.name}</h3>
                     </li>
                 })}
             </ul>
-        </div>
+            
+        </section>
     )
 };
 export default Category;
