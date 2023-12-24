@@ -2,38 +2,33 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { MenuBannerProvider } from "./commom/context/Menu_Banner";
 import { CategoriesProvider } from "./commom/context/Categories";
-
+import { ProductSearchProvider } from "./commom/context/ProductSearch";
 
 import Menu from "./components/Menu";
-import Banner from "./components/Banner";
 import Home from "./pages/Home";
 
 
 function routes() {
-  const WrapperMenuBannerProvider = ({ children }) => {
-    return <MenuBannerProvider>
-      {children}
-    </MenuBannerProvider>
-  };
-
-
   return (
     <BrowserRouter>
-      <WrapperMenuBannerProvider>
-        <Menu />
-        <Banner />
-      </WrapperMenuBannerProvider>
+      <MenuBannerProvider>
+        <ProductSearchProvider>
+          <Menu />
 
-      <Routes>
-        <Route path='/' element={
-          <WrapperMenuBannerProvider>
-            <CategoriesProvider>
-              <Home />
-            </CategoriesProvider>
-          </WrapperMenuBannerProvider>
-        }
-        />
-      </Routes>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <CategoriesProvider>
+                  <Home />
+                </CategoriesProvider>
+              }
+            />
+
+            
+          </Routes>
+        </ProductSearchProvider>
+      </MenuBannerProvider>
     </BrowserRouter>
   );
 }

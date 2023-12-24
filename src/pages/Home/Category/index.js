@@ -2,8 +2,10 @@ import { MdClear } from "react-icons/md";
 import './styles.scss';
 
 import { useCategoriesContext } from '../../../commom/context/Categories';
+import { useProductSearchContext } from "../../../commom/context/ProductSearch";
 
 const Category = () => {
+    const { setTextSearch, setSearch} = useProductSearchContext();
     const {
         imageShirt,
         imageBag,
@@ -43,7 +45,11 @@ const Category = () => {
 
             <ul>
                 {allProducts.categories.map(category => {
-                    return <li key={category.name} onClick={() => filterByCategory(category.name)}>
+                    return <li key={category.name} onClick={() => {
+                        setSearch("");
+                        setTextSearch("");
+                        filterByCategory(category.name)
+                    }}>
                         <img
                             src={getCategory(category.name)}
                             alt={`Foto da categoria ${category.name}`}

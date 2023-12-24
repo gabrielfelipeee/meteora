@@ -7,11 +7,15 @@ import { useMenuBannerContext } from "../../commom/context/Menu_Banner";
 
 
 import MenuLink from "./MenuLink";
+import { useProductSearchContext } from "../../commom/context/ProductSearch";
+
 
 
 const Menu = () => {
     const navigate = useNavigate();
     const { logo, toggleMenu, displayMenu, windowWidth } = useMenuBannerContext();
+    const { handleSubmit, handleChange, textSearch } = useProductSearchContext();
+
     const menuItems = [
         { page: 'Início', link: '/' },
         { page: 'Nossas lojas', link: '/nossaslojas' },
@@ -30,10 +34,10 @@ const Menu = () => {
         <header className="box-menu">
             <nav>
                 <div className="logo_menu">
-                    <img 
-                    src={logo} 
-                    alt="Logo da loja"
-                    onClick={() => navigate('/')}
+                    <img
+                        src={logo}
+                        alt="Logo da loja"
+                        onClick={() => navigate('/')}
                     />
                     <IoMenu className="menu" {...menuIcons}></IoMenu>
                 </div>
@@ -52,10 +56,12 @@ const Menu = () => {
                     )}
                 </ul>
             </nav>
-            <form>
+            <form onSubmit={event => handleSubmit(event)}>
                 <input
                     type="text"
                     placeholder="Digite o produto"
+                    onChange={event => handleChange(event)}
+                    value={textSearch}
                 />
                 <input
                     type="submit"
