@@ -2,6 +2,8 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 import { useMenuBannerContext } from "./Menu_Banner";
 
+import products from '../../mocks/products.json';
+
 import shirtMobile from '../../assets/Mobile/categories/shirt-mobile.png';
 import bagMobile from '../../assets/Mobile/categories/bag-mobile.png';
 import shoesMobile from '../../assets/Mobile/categories/shoes-mobile.png';
@@ -34,7 +36,7 @@ CategoriesContext.displayName = "Categories";
 const CategoriesProvider = ({ children }) => {
     const { windowWidth } = useMenuBannerContext();
 
-    
+
     const [imageShirt, setImageShirt] = useState();
     const [imageBag, setImageBag] = useState();
     const [imageShoes, setImageShoes] = useState();
@@ -42,6 +44,8 @@ const CategoriesProvider = ({ children }) => {
     const [imageCoats, setImageCoats] = useState();
     const [imageGlasses, setImageGlasses] = useState();
 
+    const allProducts = products;
+    const [productsByCategory, setProductsByCategory] = useState([]);
 
     useEffect(() => {
         if (windowWidth <= 950) {
@@ -76,6 +80,27 @@ const CategoriesProvider = ({ children }) => {
         setImageGlasses
     ]);
 
+
+
+    const filterByCategory = (categoryName) => {
+        const selectedCategory = allProducts.categories.find(category => category.name === categoryName);
+        setProductsByCategory(() => selectedCategory);
+    };
+
+    const clearFilter = () => {
+        setProductsByCategory(() => []);
+    };
+
+
+
+
+
+
+
+
+
+
+
     return (
         <CategoriesContext.Provider
             value={{
@@ -91,7 +116,12 @@ const CategoriesProvider = ({ children }) => {
                 imageCoats,
                 setImageCoats,
                 imageGlasses,
-                setImageGlasses
+                setImageGlasses,
+                productsByCategory,
+                setProductsByCategory,
+                filterByCategory,
+                clearFilter,
+                allProducts,
             }}
         >
             {children}
@@ -107,7 +137,11 @@ const useCategoriesContext = () => {
         imageShoes,
         imagePants,
         imageCoats,
-        imageGlasses
+        imageGlasses,
+        filterByCategory,
+        productsByCategory,
+        allProducts,
+        clearFilter
     } = useContext(CategoriesContext);
 
     return {
@@ -116,7 +150,11 @@ const useCategoriesContext = () => {
         imageShoes,
         imagePants,
         imageCoats,
-        imageGlasses
+        imageGlasses,
+        filterByCategory,
+        productsByCategory,
+        clearFilter,
+        allProducts
     }
 };
 export { CategoriesProvider, useCategoriesContext }

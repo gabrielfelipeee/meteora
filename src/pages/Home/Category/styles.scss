@@ -15,13 +15,13 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin: 0 18px 54px 18px;
+        margin: 0 18px 20px 18px;
         list-style: none;
 
         li {
             transition: .5s ease;
             cursor: pointer;
-            
+
             &:hover {
                 transform: translateY(-8px);
                 transition: .5s ease;
@@ -30,6 +30,7 @@
             img {
                 line-height: 0;
             }
+
             h3 {
                 font-size: 1rem;
                 font-weight: 500;
@@ -39,6 +40,21 @@
                 padding: 8px 16px;
                 margin-top: -5px;
             }
+        }
+    }
+
+    .filter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 54px;
+        color: $color-dark_grey;
+        transition: .5s;
+
+        &:hover {
+            color: #6b16ff;
+            transition: .5s;
         }
     }
 }
