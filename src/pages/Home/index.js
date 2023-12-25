@@ -5,10 +5,14 @@ import './styles.scss';
 
 import { useCategoriesContext } from "../../commom/context/Categories";
 import { useProductSearchContext } from "../../commom/context/ProductSearch";
+import { useInfoProductContext } from "../../commom/context/InfoProduct";
+import InfoProduct from "../../components/InfoProduct";
+
 
 const Home = () => {
     const { productsByCategory, allProducts } = useCategoriesContext();
     const { productSearch, search } = useProductSearchContext();
+    const { selectedProduct } = useInfoProductContext()
 
     const RenderProducts = () => {
         if (search.length > 3) {
@@ -32,13 +36,18 @@ const Home = () => {
         <main className="box-home">
             <Banner />
             <Category />
-
+            {
+                selectedProduct ?
+                    <InfoProduct {...selectedProduct} />
+                    : ""
+            }
             <section className="products">
                 <h2>Produtos que estão bombando!</h2>
                 <ul>
                     <RenderProducts />
                 </ul>
             </section>
+
         </main>
     )
 };

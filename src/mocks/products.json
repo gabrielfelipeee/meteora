@@ -7,13 +7,17 @@
                     "name": "Camiseta Conforto",
                     "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
                     "price": 70,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 1,
-                    "image": "https://images.pexels.com/photos/7319172/pexels-photo-7319172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    "image": "https://placehold.co/500x500"
                 },
                 {
                     "name": "Camiseta Estampada",
                     "description": "Camiseta com estampa floral. Feita de material respirável, ideal para dias quentes.",
                     "price": 55,
+                    "colors": ["Cinza", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 2,
                     "image": "https://placehold.co/500x500"
                 },
@@ -21,6 +25,8 @@
                     "name": "Camiseta Listrada",
                     "description": "Camiseta de listras coloridas. Confeccionada em algodão macio e confortável.",
                     "price": 60,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 3,
                     "image": "https://placehold.co/500x500"
                 },
@@ -28,6 +34,8 @@
                     "name": "Regata Básica",
                     "description": "Regata em cores diversas. Ideal para atividades esportivas ou uso casual.",
                     "price": 45,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 4,
                     "image": "https://placehold.co/500x500"
                 },
@@ -35,6 +43,8 @@
                     "name": "Camiseta Polo",
                     "description": "Polo elegante e versátil. Feita com tecido de alta qualidade.",
                     "price": 75,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 5,
                     "image": "https://placehold.co/500x500"
                 },
@@ -42,6 +52,8 @@
                     "name": "Camiseta Manga Longa",
                     "description": "Camiseta de manga longa em cores variadas. Confortável e estilosa para o inverno.",
                     "price": 65,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 6,
                     "image": "https://placehold.co/500x500"
                 },
@@ -49,6 +61,8 @@
                     "name": "Camiseta Tie-Dye",
                     "description": "Camiseta tie-dye em tons vibrantes. Cada peça é única.",
                     "price": 50,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 7,
                     "image": "https://placehold.co/500x500"
                 },
@@ -56,6 +70,8 @@
                     "name": "Camiseta Com Estampa Geométrica",
                     "description": "Camiseta com estampa geométrica moderna. Tecido macio e durável.",
                     "price": 58,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 8,
                     "image": "https://placehold.co/500x500"
                 },
@@ -63,6 +79,8 @@
                     "name": "Camiseta Esportiva",
                     "description": "Camiseta para prática esportiva. Tecnologia que absorve o suor.",
                     "price": 68,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 9,
                     "image": "https://placehold.co/500x500"
                 },
@@ -70,6 +88,8 @@
                     "name": "Camiseta Oversized",
                     "description": "Camiseta estilo oversized, confortável e estilosa.",
                     "price": 62,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 10,
                     "image": "https://placehold.co/500x500"
                 }
@@ -82,6 +102,8 @@
                     "name": "Bolsa Tiracolo",
                     "description": "Bolsa tiracolo em couro sintético. Ideal para o dia a dia.",
                     "price": 90,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 11,
                     "image": "https://placehold.co/500x500"
                 },
@@ -89,6 +111,8 @@
                     "name": "Bolsa de Praia",
                     "description": "Bolsa de praia espaçosa. Feita com material resistente à água.",
                     "price": 75,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 12,
                     "image": "https://placehold.co/500x500"
                 },
@@ -96,6 +120,8 @@
                     "name": "Bolsa Transversal",
                     "description": "Bolsa transversal elegante, perfeita para ocasiões casuais.",
                     "price": 85,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 13,
                     "image": "https://placehold.co/500x500"
                 },
@@ -103,6 +129,8 @@
                     "name": "Mochila Estilosa",
                     "description": "Mochila moderna com compartimentos amplos. Design estiloso e prático.",
                     "price": 110,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 14,
                     "image": "https://placehold.co/500x500"
                 },
@@ -110,6 +138,8 @@
                     "name": "Bolsa Tote",
                     "description": "Bolsa tote espaçosa e versátil. Ideal para o trabalho ou passeios.",
                     "price": 95,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 15,
                     "image": "https://placehold.co/500x500"
                 },
@@ -117,6 +147,8 @@
                     "name": "Bolsa Carteiro",
                     "description": "Bolsa carteiro em material resistente. Design funcional e moderno.",
                     "price": 80,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 16,
                     "image": "https://placehold.co/500x500"
                 },
@@ -124,6 +156,8 @@
                     "name": "Bolsa Satchel",
                     "description": "Bolsa satchel com alça ajustável. Perfeita para looks casuais.",
                     "price": 70,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 17,
                     "image": "https://placehold.co/500x500"
                 },
@@ -131,6 +165,8 @@
                     "name": "Clutch Elegante",
                     "description": "Clutch elegante para eventos formais. Detalhes refinados e acabamento impecável.",
                     "price": 100,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 18,
                     "image": "https://placehold.co/500x500"
                 },
@@ -138,6 +174,8 @@
                     "name": "Bolsa de Couro Vintage",
                     "description": "Bolsa de couro vintage com estilo retrô. Design exclusivo e durável.",
                     "price": 120,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 19,
                     "image": "https://placehold.co/500x500"
                 },
@@ -145,6 +183,8 @@
                     "name": "Bolsa de Viagem",
                     "description": "Bolsa de viagem resistente. Compartimentos especiais para organizar itens pessoais.",
                     "price": 130,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 20,
                     "image": "https://placehold.co/500x500"
                 }
@@ -157,6 +197,8 @@
                     "name": "Tênis Esportivo",
                     "description": "Tênis leve e confortável para atividades esportivas. Tecnologia de amortecimento avançada.",
                     "price": 120,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 21,
                     "image": "https://placehold.co/500x500"
                 },
@@ -164,6 +206,8 @@
                     "name": "Sapatênis Casual",
                     "description": "Sapatênis versátil para uso casual. Combina estilo e conforto.",
                     "price": 90,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 22,
                     "image": "https://placehold.co/500x500"
                 },
@@ -171,6 +215,8 @@
                     "name": "Sandália Slide",
                     "description": "Sandália slide para momentos relaxantes. Confortável e fácil de calçar.",
                     "price": 50,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 23,
                     "image": "https://placehold.co/500x500"
                 },
@@ -178,6 +224,8 @@
                     "name": "Botas de Couro",
                     "description": "Botas de couro robustas para uso diário. Duráveis e resistentes.",
                     "price": 150,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 24,
                     "image": "https://placehold.co/500x500"
                 },
@@ -185,6 +233,8 @@
                     "name": "Sapato Social",
                     "description": "Sapato social elegante para ocasiões formais. Design clássico e refinado.",
                     "price": 110,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 25,
                     "image": "https://placehold.co/500x500"
                 },
@@ -192,6 +242,8 @@
                     "name": "Chinelo Anatómico",
                     "description": "Chinelo anatômico para conforto dos pés. Ideal para descanso e lazer.",
                     "price": 35,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 26,
                     "image": "https://placehold.co/500x500"
                 },
@@ -199,6 +251,8 @@
                     "name": "Tênis de Corrida",
                     "description": "Tênis especializado para corridas. Amortecimento e suporte excelentes.",
                     "price": 140,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 27,
                     "image": "https://placehold.co/500x500"
                 },
@@ -206,6 +260,8 @@
                     "name": "Sapatilha Feminina",
                     "description": "Sapatilha feminina elegante e confortável. Versátil para diversas ocasiões.",
                     "price": 80,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 28,
                     "image": "https://placehold.co/500x500"
                 },
@@ -213,6 +269,8 @@
                     "name": "Alpargata Unissex",
                     "description": "Alpargata unissex em material respirável. Leve e casual.",
                     "price": 60,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 29,
                     "image": "https://placehold.co/500x500"
                 },
@@ -220,6 +278,8 @@
                     "name": "Mocassim Clássico",
                     "description": "Mocassim clássico em couro legítimo. Estilo atemporal e sofisticado.",
                     "price": 100,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 30,
                     "image": "https://placehold.co/500x500"
                 }
@@ -232,6 +292,8 @@
                     "name": "Calça Jeans Skinny",
                     "description": "Calça jeans slim fit com lavagem moderna. Confortável e estilosa.",
                     "price": 80,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 31,
                     "image": "https://placehold.co/500x500"
                 },
@@ -239,6 +301,8 @@
                     "name": "Calça Social Slim",
                     "description": "Calça social slim para ocasiões formais. Corte elegante e acabamento refinado.",
                     "price": 90,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 32,
                     "image": "https://placehold.co/500x500"
                 },
@@ -246,6 +310,8 @@
                     "name": "Calça Cargo",
                     "description": "Calça cargo em tecido resistente. Bolsos espaçosos e design utilitário.",
                     "price": 75,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 33,
                     "image": "https://placehold.co/500x500"
                 },
@@ -253,6 +319,8 @@
                     "name": "Calça Jogger",
                     "description": "Calça jogger confortável e moderna. Ideal para um visual descontraído.",
                     "price": 65,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 34,
                     "image": "https://placehold.co/500x500"
                 },
@@ -260,6 +328,8 @@
                     "name": "Calça Legging",
                     "description": "Calça legging fitness para atividades esportivas. Confortável e elástica.",
                     "price": 50,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 35,
                     "image": "https://placehold.co/500x500"
                 },
@@ -267,6 +337,8 @@
                     "name": "Calça Linho",
                     "description": "Calça de linho leve e arejada. Perfeita para dias quentes.",
                     "price": 70,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 36,
                     "image": "https://placehold.co/500x500"
                 },
@@ -274,6 +346,8 @@
                     "name": "Calça Flare",
                     "description": "Calça flare elegante e feminina. Destaca a silhueta e combina com diversos estilos.",
                     "price": 85,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 37,
                     "image": "https://placehold.co/500x500"
                 },
@@ -281,6 +355,8 @@
                     "name": "Calça Cintura Alta",
                     "description": "Calça cintura alta em tecido macio. Modelagem que valoriza a silhueta.",
                     "price": 75,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 38,
                     "image": "https://placehold.co/500x500"
                 },
@@ -288,6 +364,8 @@
                     "name": "Calça Moletom",
                     "description": "Calça moletom confortável para uso casual. Cós elástico e bolsos laterais.",
                     "price": 55,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 39,
                     "image": "https://placehold.co/500x500"
                 },
@@ -295,6 +373,8 @@
                     "name": "Calça Pantalona",
                     "description": "Calça pantalona fluida e elegante. Ideal para looks sofisticados.",
                     "price": 95,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 40,
                     "image": "https://placehold.co/500x500"
                 }
@@ -307,6 +387,8 @@
                     "name": "Jaqueta Jeans",
                     "description": "Jaqueta jeans clássica e versátil. Ideal para diversas estações do ano.",
                     "price": 100,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 41,
                     "image": "https://placehold.co/500x500"
                 },
@@ -314,6 +396,8 @@
                     "name": "Sobretudo Longo",
                     "description": "Sobretudo longo e elegante. Perfeito para dias frios.",
                     "price": 150,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 42,
                     "image": "https://placehold.co/500x500"
                 },
@@ -321,6 +405,8 @@
                     "name": "Parka Resistente à Água",
                     "description": "Parka resistente à água e vento. Confortável e funcional.",
                     "price": 120,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 43,
                     "image": "https://placehold.co/500x500"
                 },
@@ -328,6 +414,8 @@
                     "name": "Blazer Clássico",
                     "description": "Blazer clássico para looks formais. Acabamento refinado.",
                     "price": 110,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 44,
                     "image": "https://placehold.co/500x500"
                 },
@@ -335,6 +423,8 @@
                     "name": "Moletom com Capuz",
                     "description": "Moletom com capuz para estilo casual. Confortável e estiloso.",
                     "price": 80,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 45,
                     "image": "https://placehold.co/500x500"
                 },
@@ -342,6 +432,8 @@
                     "name": "Casaco de Pele Sintética",
                     "description": "Casaco de pele sintética elegante. Opção vegana e estilosa.",
                     "price": 130,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id":46,
                     "image": "https://placehold.co/500x500"
                 },
@@ -349,6 +441,8 @@
                     "name": "Trench Coat",
                     "description": "Trench coat clássico e atemporal. Perfeito para diversas ocasiões.",
                     "price": 140,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 47,
                     "image": "https://placehold.co/500x500"
                 },
@@ -356,6 +450,8 @@
                     "name": "Casaco Acolchoado",
                     "description": "Casaco acolchoado para dias frios. Quente e confortável.",
                     "price": 95,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 48,
                     "image": "https://placehold.co/500x500"
                 },
@@ -363,6 +459,8 @@
                     "name": "Jaqueta Corta-Vento",
                     "description": "Jaqueta corta-vento esportiva. Ideal para atividades ao ar livre.",
                     "price": 75,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 49,
                     "image": "https://placehold.co/500x500"
                 },
@@ -370,6 +468,8 @@
                     "name": "Cardigã de Tricô",
                     "description": "Cardigã de tricô macio e versátil. Ótimo para meia-estação.",
                     "price": 70,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 50,
                     "image": "https://placehold.co/500x500"
                 }
@@ -382,13 +482,17 @@
                     "name": "Óculos de Sol Aviador",
                     "description": "Óculos de sol estilo aviador. Proteção UV e design clássico.",
                     "price": 80,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 51,
-                    "image": "https://images.pexels.com/photos/1071878/pexels-photo-1071878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    "image": "https://placehold.co/500x500"
                 },
                 {
                     "name": "Óculos Retrô",
                     "description": "Óculos de armação redonda com estilo retrô. Versátil e estiloso.",
                     "price": 70,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 52,
                     "image": "https://placehold.co/500x500"
                 },
@@ -396,20 +500,26 @@
                     "name": "Óculos de Grau Tradicional",
                     "description": "Óculos de grau com armação tradicional. Leve e confortável.",
                     "price": 100,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 53,
-                    "image": "https://images.pexels.com/photos/2530391/pexels-photo-2530391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    "image": "https://placehold.co/500x500"
                 },
                 {
                     "name": "Óculos Esportivo",
                     "description": "Óculos esportivo com lentes polarizadas. Ideal para atividades ao ar livre.",
                     "price": 90,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 54,
-                    "image": "https://images.pexels.com/photos/147641/pexels-photo-147641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    "image": "https://placehold.co/500x500"
                 },
                 {
                     "name": "Óculos Gatinho",
                     "description": "Óculos de estilo gatinho com personalidade. Combinação de elegância e modernidade.",
                     "price": 75,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 55,
                     "image": "https://placehold.co/500x500"
                 },
@@ -417,13 +527,17 @@
                     "name": "Óculos Coração",
                     "description": "Óculos em formato de coração. Design icônico e atemporal.",
                     "price": 85,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 56,
-                    "image": "https://images.pexels.com/photos/6479569/pexels-photo-6479569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    "image": "https://placehold.co/500x500"
                 },
                 {
                     "name": "Óculos Oversized",
                     "description": "Óculos oversized para um visual ousado. Proteção UV e estilo contemporâneo.",
                     "price": 95,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 57,
                     "image": "https://placehold.co/500x500"
                 },
@@ -431,6 +545,8 @@
                     "name": "Óculos de Natação",
                     "description": "Óculos de natação confortáveis e ajustáveis. Proteção antiembaçante.",
                     "price": 45,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 58,
                     "image": "https://placehold.co/500x500"
                 },
@@ -438,6 +554,8 @@
                     "name": "Óculos Clubmaster",
                     "description": "Óculos estilo clubmaster elegante. Armação leve e resistente.",
                     "price": 80,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 59,
                     "image": "https://placehold.co/500x500"
                 },
@@ -445,6 +563,8 @@
                     "name": "Óculos Quadrado Moderno",
                     "description": "Óculos de armação quadrada moderna. Estilo contemporâneo e urbano.",
                     "price": 65,
+                    "colors": ["Azul", "Branco", "Preto"],
+                    "size": ["P", "M", "G", "GG"],
                     "id": 60,
                     "image": "https://placehold.co/500x500"
                 }
