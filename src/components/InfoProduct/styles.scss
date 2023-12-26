@@ -27,6 +27,11 @@
             font-weight: 700;
             max-width: 150px;
         }
+
+        .clear {
+            cursor: pointer;
+            font-size: 32px;
+        }
     }
 
     .box-body {
@@ -42,7 +47,6 @@
             border: 1px solid $color-grey;
             padding: 0 12px 12px 12px;
             margin-top: -4px;
-
             h3 {
                 font-size: 1.1rem;
                 font-weight: 700;
@@ -116,6 +120,36 @@
                     background-color: #6b16ff;
                     transition: background-color .5s ease;
                 }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 950px) {
+    .box-info-product {
+        width: 80%;
+        max-width: 800px;
+
+        .box-head {
+            padding: 16px 32px;
+
+            h2 {
+                max-width: 500px;
+            }
+        }
+
+        .box-body {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+
+            img {
+                max-width: 350px;
+            }
+
+            .box-info {
+                border: none;
             }
         }
     }

@@ -2,7 +2,6 @@ import { createContext, useContext, useState } from "react";
 
 
 import products from '../../mocks/products.json';
-import Category from "../../pages/Home/Category";
 
 
 const InfoProductContext = createContext();
@@ -12,7 +11,7 @@ InfoProductContext.displayName = "InfoProduct";
 
 const InfoProductProvider = ({ children }) => {
     const [selectedProduct, setSelectedProduct] = useState(null);
-
+    const [infoProductVisible, setInfoProductVisible] = useState();
 
     const displayDetails = (id) => {
 
@@ -25,9 +24,15 @@ const InfoProductProvider = ({ children }) => {
 
         if (filteredClickedProduct.length > 0) {
             setSelectedProduct(filteredClickedProduct[0]);
+            setInfoProductVisible(true);
         } else {
             setSelectedProduct(null);
         }
+    };
+
+    const closeDetails = () => {
+        setInfoProductVisible(false);
+        setSelectedProduct(null);
     };
 
 
@@ -35,8 +40,11 @@ const InfoProductProvider = ({ children }) => {
         <InfoProductContext.Provider
             value={{
                 displayDetails,
+                closeDetails,
                 selectedProduct,
-                setSelectedProduct
+                setSelectedProduct,
+                infoProductVisible,
+                setInfoProductVisible
             }}
         >
             {children}
@@ -45,11 +53,21 @@ const InfoProductProvider = ({ children }) => {
 };
 
 const useInfoProductContext = () => {
-    const { displayDetails, selectedProduct } = useContext(InfoProductContext);
+    const {
+        displayDetails,
+        closeDetails,
+        selectedProduct,
+        setSelectedProduct,
+        infoProductVisible,
+    } = useContext(InfoProductContext);
 
     return {
         displayDetails,
-        selectedProduct
+        closeDetails,
+        selectedProduct,
+        setSelectedProduct,
+        infoProductVisible,
+
     }
 }
 export { InfoProductProvider, useInfoProductContext }

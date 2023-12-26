@@ -12,7 +12,7 @@ import InfoProduct from "../../components/InfoProduct";
 const Home = () => {
     const { productsByCategory, allProducts } = useCategoriesContext();
     const { productSearch, search } = useProductSearchContext();
-    const { selectedProduct } = useInfoProductContext()
+    const { selectedProduct, closeDetails, infoProductVisible } = useInfoProductContext();
 
     const RenderProducts = () => {
         if (search.length > 3) {
@@ -32,15 +32,25 @@ const Home = () => {
         }
     };
 
+
+
     return (
         <main className="box-home">
             <Banner />
             <Category />
-            {
-                selectedProduct ?
-                    <InfoProduct {...selectedProduct} />
-                    : ""
-            }
+
+            {selectedProduct && (
+                <>
+                    <div className="overlay"></div>
+
+                    {infoProductVisible && (
+                        <InfoProduct
+                            {...selectedProduct}
+                            closeDetails={closeDetails}
+                        />
+                    )}
+                </>
+            )}
             <section className="products">
                 <h2>Produtos que estão bombando!</h2>
                 <ul>

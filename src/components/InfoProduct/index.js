@@ -3,15 +3,18 @@ import './styles.scss';
 
 
 import circle from '../../assets/check-circle.svg';
+import { useInfoProductContext } from "../../commom/context/InfoProduct";
 
 const InfoProduct = ({ image, name, description, price, size, colors }) => {
+    const { closeDetails } = useInfoProductContext();
+
 
     return (
         <section className="box-info-product">
             <div className="box-head">
                 <img src={circle} />
                 <h2>Confira detalhes sobre o produto</h2>
-                <MdClear size={32} />
+                <MdClear className="clear" onClick={() => closeDetails()}/>
             </div>
 
             <div className="box-body">
@@ -25,15 +28,15 @@ const InfoProduct = ({ image, name, description, price, size, colors }) => {
 
                     <fieldset className="radios">
                         <legend>Cores:</legend>
-                        {colors?.map(size => (
-                            <div key={size}>
+                        {colors?.map(color => (
+                            <div key={color}>
                                 <input
                                     type="radio"
-                                    id={`radio_${size}`}
-                                    name="size"
-                                    value={size}
+                                    id={`radio_${color}`}
+                                    name="color"
+                                    value={color}
                                 />
-                                <label htmlFor={`radio_${size}`}>{size}</label>
+                                <label htmlFor={`radio_${color}`}>{color}</label>
                             </div>
                         ))}
                     </fieldset>
