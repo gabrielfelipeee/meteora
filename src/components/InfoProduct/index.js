@@ -3,18 +3,30 @@ import './styles.scss';
 
 
 import circle from '../../assets/check-circle.svg';
+
+
 import { useInfoProductContext } from "../../commom/context/InfoProduct";
+import { useCartContext } from "../../commom/context/Cart";
 
-const InfoProduct = ({ image, name, description, price, size, colors }) => {
+
+const InfoProduct = ({ image, name, description, price, size, colors, id }) => {
     const { closeDetails } = useInfoProductContext();
+    const { 
+        addProduct, 
+        changeColor, 
+        changeSize,
+        selectedSize,
+        selectedColor,
+        cart,
+    } = useCartContext();
 
-
+    console.log(cart)
     return (
         <section className="box-info-product">
             <div className="box-head">
                 <img src={circle} />
                 <h2>Confira detalhes sobre o produto</h2>
-                <MdClear className="clear" onClick={() => closeDetails()}/>
+                <MdClear className="clear" onClick={() => closeDetails()} />
             </div>
 
             <div className="box-body">
@@ -35,6 +47,7 @@ const InfoProduct = ({ image, name, description, price, size, colors }) => {
                                     id={`radio_${color}`}
                                     name="color"
                                     value={color}
+                                    onChange={event => changeColor(event)}
                                 />
                                 <label htmlFor={`radio_${color}`}>{color}</label>
                             </div>
@@ -50,15 +63,29 @@ const InfoProduct = ({ image, name, description, price, size, colors }) => {
                                     id={`radio_${size}`}
                                     name="size"
                                     value={size}
+                                    onChange={event => changeSize(event)}
                                 />
                                 <label htmlFor={`radio_${size}`}>{size}</label>
                             </div>
                         ))}
                     </fieldset>
-                    <button>Adicionar à sacola</button>
+                    <button
+                        onClick={() => addProduct(
+                            {
+                                image,
+                                name,
+                                id,
+                                price,
+                                selectedSize,
+                                selectedColor,
+                            }, id)
+                        }
+                    >
+                        Adicionar à sacola
+                    </button>
                 </div>
             </div>
-        </section>
+        </section >
     )
 };
 export default InfoProduct;
