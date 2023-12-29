@@ -18,9 +18,8 @@ const Menu = () => {
 
     const menuItems = [
         { page: 'Início', link: '/' },
-        { page: 'Nossas lojas', link: '/nossaslojas' },
-        { page: 'Novidades', link: '/novidades' },
-        { page: 'Promoções', link: '/promocoes' }
+        { page: 'Favoritos', link: '/favoritos' },
+        { page: 'Carrinho', link: '/carrinho' }
     ];
 
     const menuIcons = {

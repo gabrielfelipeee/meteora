@@ -17,10 +17,10 @@ const InfoProduct = ({ image, name, description, price, size, colors, id }) => {
         changeSize,
         selectedSize,
         selectedColor,
-        cart,
+
     } = useCartContext();
 
-    console.log(cart)
+    
     return (
         <section className="box-info-product">
             <div className="box-head">

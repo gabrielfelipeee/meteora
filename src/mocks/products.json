@@ -546,7 +546,7 @@
                     "description": "Óculos de natação confortáveis e ajustáveis. Proteção antiembaçante.",
                     "price": 45,
                     "colors": ["Azul", "Branco", "Preto"],
-                    "size": ["P", "M", "G", "GG"],
+                    
                     "id": 58,
                     "image": "https://placehold.co/500x500"
                 },
