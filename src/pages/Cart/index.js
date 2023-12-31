@@ -8,7 +8,7 @@ import { useCartContext } from "../../commom/context/Cart";
 import Product from "./Product";
 
 const Cart = () => {
-    const { cart } = useCartContext();
+    const { cart, totalCartProducts, freight, totalCart } = useCartContext();
 
     return (
         <main className="box-cart">
@@ -16,21 +16,19 @@ const Cart = () => {
                 {cart.map(product => <Product {...product} key={product.id} />)}
             </ul>
 
-
             {
                 cart.length > 0 && <div className="info-final">
                     <div>
                         Produtos: {cart.length}
-                        <span>R$ 50,00</span>
+                        <span>R$ {totalCartProducts},00</span>
                     </div>
 
                     <div>
-                        Frete: <span>Grátis</span>
+                        Frete: <span>R$ {freight}</span>
                     </div>
 
-
                     <div className="total">
-                        Total: <span>R$ {cart[0]?.price},00</span>
+                        Total: <span>R$ {totalCart}</span>
                     </div>
 
                     <button>Continuar</button>

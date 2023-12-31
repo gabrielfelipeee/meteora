@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 import { MdClear } from "react-icons/md";
 import './styles.scss';
 
@@ -11,16 +13,16 @@ import { useCartContext } from "../../commom/context/Cart";
 
 const InfoProduct = ({ image, name, description, price, size, colors, id }) => {
     const { closeDetails } = useInfoProductContext();
-    const { 
-        addProduct, 
-        changeColor, 
+    const {
+        addProduct,
+        changeColor,
         changeSize,
         selectedSize,
         selectedColor,
 
     } = useCartContext();
 
-    
+
     return (
         <section className="box-info-product">
             <div className="box-head">
@@ -70,16 +72,18 @@ const InfoProduct = ({ image, name, description, price, size, colors, id }) => {
                         ))}
                     </fieldset>
                     <button
-                        onClick={() => addProduct(
-                            {
-                                image,
-                                name,
-                                id,
-                                price,
-                                selectedSize,
-                                selectedColor,
-                            }, id)
-                        }
+                        onClick={() => {
+                            addProduct(
+                                {
+                                    image,
+                                    name,
+                                    id: uuidv4(),
+                                    price,
+                                    selectedSize,
+                                    selectedColor,
+                                }, id)
+                            closeDetails()
+                        }}
                     >
                         Adicionar à sacola
                     </button>

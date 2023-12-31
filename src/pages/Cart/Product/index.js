@@ -4,8 +4,12 @@ import { GoPlus } from "react-icons/go";
 
 
 import './styles.scss';
+import { useCartContext } from "../../../commom/context/Cart";
 
-const Product = ({ image, name, price, selectedSize, selectedColor }) => {
+const Product = ({ image, name, price, selectedSize, selectedColor, amount, id }) => {
+    const { deleteProduct, decrease, increase } = useCartContext();
+
+
     return (
         <li className="box-product" >
             <div className="info">
@@ -24,13 +28,13 @@ const Product = ({ image, name, price, selectedSize, selectedColor }) => {
                 </div>
             </div>
 
-            <MdClear className="clear" />
+            <MdClear className="clear" onClick={() => deleteProduct(id)}/>
 
             <div className="data">
                 <div className="amount">
-                    <FiMinus className="icon-amount" />
-                    <span>1</span>
-                    <GoPlus className="icon-amount" />
+                    <FiMinus className="icon-amount" onClick={() => decrease(id)}/>
+                    <span>{amount}</span>
+                    <GoPlus className="icon-amount" onClick={() => increase(id)}/>
                 </div>
                 <span className="price">R$ {price},00</span>
             </div>
