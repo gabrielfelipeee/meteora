@@ -9,6 +9,7 @@ import { CartProvider } from "./commom/context/Cart";
 import Menu from "./components/Menu";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
+import Favorites from "./pages/Favorites";
 
 function routes() {
   return (
@@ -17,27 +18,34 @@ function routes() {
         <ProductSearchProvider>
           <CartProvider>
             <Menu />
+            <InfoProductProvider>
+              <CategoriesProvider>
+                <Routes>
+                  <Route
+                    path="/"
+                    element={
 
-            <Routes>
-              <Route
-                path="/"
-                element={
-                  <InfoProductProvider>
-                    <CategoriesProvider>
                       <Home />
-                    </CategoriesProvider>
-                  </InfoProductProvider>
-                }
-              />
-              <Route
-                path="/carrinho"
-                element={
-                  <Cart />
-                }
-              />
+
+                    }
+                  />
+                  <Route
+                    path="/favoritos"
+                    element={
+                      <Favorites />
+                    }
+                  />
+                  <Route
+                    path="/carrinho"
+                    element={
+                      <Cart />
+                    }
+                  />
 
 
-            </Routes>
+                </Routes>
+              </CategoriesProvider>
+            </InfoProductProvider>
           </CartProvider>
         </ProductSearchProvider>
       </MenuBannerProvider>

@@ -46,6 +46,34 @@ const CategoriesProvider = ({ children }) => {
 
     const allProducts = products;
     const [productsByCategory, setProductsByCategory] = useState([]);
+    const [favorites, setFavorites] = useState([]);
+
+    const isProductFavorited = (id) =>  favorites.some(fav => fav.id === id);
+
+    const toggleFavorites = (id) => {
+        // Verifica se o produto está nos favoritos
+        const isFavorited = favorites.some(fav => fav.id === id);
+        
+        if (isFavorited) {
+            // Remove o produto dos favoritos
+            const updatedFavorites = favorites.filter(fav => fav.id !== id);
+            setFavorites(updatedFavorites);
+            console.log('Produto removido dos favoritos.');
+        } else {
+            // Encontra o produto desejado
+            const product = products.categories
+                .flatMap(category => category.products)
+                .find(item => item.id === id);
+    
+            if (product) {
+                // Adiciona o produto aos favoritos
+                setFavorites(prevFavorites => [...prevFavorites, product]);
+                console.log('Produto adicionado aos favoritos.');
+            } else {
+                console.log('Produto não encontrado.');
+            }
+        }
+    }
 
     useEffect(() => {
         if (windowWidth <= 950) {
@@ -92,15 +120,6 @@ const CategoriesProvider = ({ children }) => {
     };
 
 
-
-
-
-
-
-
-
-
-
     return (
         <CategoriesContext.Provider
             value={{
@@ -122,6 +141,11 @@ const CategoriesProvider = ({ children }) => {
                 filterByCategory,
                 clearFilter,
                 allProducts,
+                toggleFavorites,
+                favorites,
+                setFavorites,
+                isProductFavorited
+
             }}
         >
             {children}
@@ -141,7 +165,10 @@ const useCategoriesContext = () => {
         filterByCategory,
         productsByCategory,
         allProducts,
-        clearFilter
+        clearFilter,
+        toggleFavorites,
+        favorites,
+        isProductFavorited
     } = useContext(CategoriesContext);
 
     return {
@@ -154,7 +181,10 @@ const useCategoriesContext = () => {
         filterByCategory,
         productsByCategory,
         clearFilter,
-        allProducts
+        allProducts,
+        toggleFavorites,
+        favorites,
+        isProductFavorited
     }
 };
 export { CategoriesProvider, useCategoriesContext }

@@ -4,11 +4,11 @@ import { MdClear } from "react-icons/md";
 import './styles.scss';
 
 
-import circle from '../../assets/check-circle.svg';
+import circle from '../../../assets/check-circle.svg';
 
 
-import { useInfoProductContext } from "../../commom/context/InfoProduct";
-import { useCartContext } from "../../commom/context/Cart";
+import { useInfoProductContext } from "../../../commom/context/InfoProduct";
+import { useCartContext } from "../../../commom/context/Cart";
 
 
 const InfoProduct = ({ image, name, description, price, size, colors, id }) => {

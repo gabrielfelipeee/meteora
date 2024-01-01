@@ -5,14 +5,13 @@ import './styles.scss';
 
 import { useCategoriesContext } from "../../commom/context/Categories";
 import { useProductSearchContext } from "../../commom/context/ProductSearch";
-import { useInfoProductContext } from "../../commom/context/InfoProduct";
-import InfoProduct from "../../components/InfoProduct";
+
+import Overlay from "../../components/Overlay";
 
 
 const Home = () => {
     const { productsByCategory, allProducts } = useCategoriesContext();
     const { productSearch, search } = useProductSearchContext();
-    const { selectedProduct, closeDetails, infoProductVisible } = useInfoProductContext();
 
     const RenderProducts = () => {
         if (search.length > 3) {
@@ -39,18 +38,8 @@ const Home = () => {
             <Banner />
             <Category />
 
-            {selectedProduct && (
-                <>
-                    <div className="overlay"></div>
+            <Overlay />
 
-                    {infoProductVisible && (
-                        <InfoProduct
-                            {...selectedProduct}
-                            closeDetails={closeDetails}
-                        />
-                    )}
-                </>
-            )}
             <section className="products">
                 <h2>Produtos que estão bombando!</h2>
                 <ul>
