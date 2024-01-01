@@ -1,13 +1,14 @@
 @import '../../styles/abstract/variables.scss';
 
 .box-product-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     border: 1px solid $color-grey;
     max-width: 400px;
     min-height: 100%;
-
+    
     img {
         width: 100%;
         line-height: 0;
@@ -49,5 +50,14 @@
             background-color: #6b16ff;
             transition: background-color .5s ease;
         }
+    }
+
+    .star {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        font-size: 20px;
+        cursor: pointer;
+        color: $color-purple;
     }
 }

@@ -1,9 +1,9 @@
 import { MdClear } from "react-icons/md";
 import { FiMinus } from "react-icons/fi";
 import { GoPlus } from "react-icons/go";
-
-
 import './styles.scss';
+
+
 import { useCartContext } from "../../../commom/context/Cart";
 
 const Product = ({ image, name, price, selectedSize, selectedColor, amount, id }) => {

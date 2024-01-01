@@ -14,6 +14,7 @@ const CartProvider = ({ children }) => {
     const [totalCart, setTotalCart] = useState(0);
 
 
+
     const addProduct = (newProduct) => {
         const inCart = cart.some(product =>
             product?.name === newProduct.name

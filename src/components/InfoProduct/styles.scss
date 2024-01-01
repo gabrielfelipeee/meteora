@@ -9,13 +9,14 @@
     background-color: $color-white;
     border-radius: 0px 0px 4px 4px;
     width: 324px;
+    z-index: 999;
 
     .box-head {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        padding: 12px;
+        padding: 10px;
         font-size: .7rem;
         font-weight: 500;
         text-align: center;
@@ -23,7 +24,7 @@
         color: $color-white;
 
         h2 {
-            font-size: 1rem;
+            font-size: .9rem;
             font-weight: 700;
             max-width: 150px;
         }
@@ -35,7 +36,7 @@
     }
 
     .box-body {
-        padding: 12px 12px 16px 12px;
+        padding: 10px 10px 16px 10px;
         color: $color-dark_grey;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
@@ -45,16 +46,16 @@
 
         .box-info {
             border: 1px solid $color-grey;
-            padding: 0 12px 12px 12px;
+            padding: 0 10px 10px 10px;
             margin-top: -4px;
             h3 {
-                font-size: 1.1rem;
+                font-size: 1rem;
                 font-weight: 700;
                 margin: 20px 0;
             }
 
             .description {
-                font-size: .9rem;
+                font-size: .8rem;
                 line-height: 1.2rem;
                 margin-bottom: 20px;
                 padding-bottom: 20px;
@@ -62,16 +63,16 @@
             }
 
             .price {
-                font-size: 1.1rem;
+                font-size: 1rem;
                 font-weight: 500;
                 display: block;
-                margin-bottom: 12px;
+                margin-bottom: 10px;
             }
 
             .store {
                 font-size: .8rem;
                 opacity: .3;
-                padding-bottom: 12px;
+                padding-bottom: 10px;
             }
 
             .radios {
@@ -83,8 +84,8 @@
                     font-size: .9rem;
                     font-weight: 700;
                     border-top: 1px solid $color-grey;
-                    padding-top: 12px;
-                    margin-bottom: 12px;
+                    padding-top: 10px;
+                    margin-bottom: 10px;
                     width: 100%;
                 }
 
@@ -99,7 +100,7 @@
                     }
 
                     label {
-                        margin-bottom: 12px;
+                        margin-bottom: 10px;
                     }
 
                 }
@@ -109,7 +110,7 @@
 
             button {
                 font-size: 1rem;
-                padding: 8px 12px;
+                padding: 8px 10px;
                 background-color: #9353FF;
                 color: $color-white;
                 border: none;
@@ -150,6 +151,17 @@
 
             .box-info {
                 border: none;
+
+                h3 {
+                    font-size: 1.1rem;
+                }
+                .description {
+                    font-size: .9rem;
+                }
+
+                .price {
+                    font-size: 1.1rem;
+                }
             }
         }
     }

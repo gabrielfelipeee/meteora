@@ -1,4 +1,4 @@
-import Banner from "../../components/Banner";
+import Banner from "./Banner";
 import Category from "./Category";
 import ProductCard from "../../components/ProductCard";
 import './styles.scss';

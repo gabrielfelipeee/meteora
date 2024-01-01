@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import { IoMenu, IoClose } from "react-icons/io5";
+import { PiShoppingCartSimpleThin } from "react-icons/pi";
 import './styles.scss';
 
 
@@ -19,14 +20,13 @@ const Menu = () => {
     const menuItems = [
         { page: 'Início', link: '/' },
         { page: 'Favoritos', link: '/favoritos' },
-        { page: 'Carrinho', link: '/carrinho' }
+        { page: <PiShoppingCartSimpleThin size={32}/>, link: '/carrinho' }
     ];
 
     const menuIcons = {
         size: 32,
         onClick: toggleMenu
     };
-
 
 
     return (

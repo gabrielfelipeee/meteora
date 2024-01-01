@@ -1,7 +1,6 @@
 import './styles.scss';
 
 
-
 import { useCartContext } from "../../commom/context/Cart";
 
 

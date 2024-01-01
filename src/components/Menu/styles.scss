@@ -40,7 +40,7 @@
             padding: 56px 32px;
 
             li {
-                &:nth-child(-n+4) {
+                &:nth-child(-n+3) {
                     border-bottom: 1px solid $color-grey;
                     padding-bottom: .8rem;
                     margin-bottom: .8rem;
@@ -104,10 +104,13 @@
                 padding: 0;
 
                 li {
-                    &:nth-child(-n+4) {
+                    &:nth-child(-n+3) {
                         padding-bottom: 0;
                         border-bottom: 0;
                         margin-bottom: 0;
+                    }
+                    &:last-child {
+                        margin-left: 32px;
                     }
                 }
 

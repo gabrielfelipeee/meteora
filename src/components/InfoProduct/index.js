@@ -19,20 +19,19 @@ const InfoProduct = ({ image, name, description, price, size, colors, id }) => {
         changeSize,
         selectedSize,
         selectedColor,
-
     } = useCartContext();
 
 
     return (
         <section className="box-info-product">
             <div className="box-head">
-                <img src={circle} />
+                <img src={circle} alt="imagem de um círculo amarelo"/>
                 <h2>Confira detalhes sobre o produto</h2>
                 <MdClear className="clear" onClick={() => closeDetails()} />
             </div>
 
             <div className="box-body">
-                <img src={image}></img>
+                <img src={image} alt="imagem do produto"></img>
 
                 <div className="box-info">
                     <h3>{name}</h3>

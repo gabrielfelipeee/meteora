@@ -54,7 +54,7 @@ const MenuBannerProvider = ({ children }) => {
 
 
     const toggleMenu = () => {
-        setDisplayMenu(display => display === "" || display === "none" ? display = "flex" : "none")
+        setDisplayMenu(display => display === "" || display === "none" ? display = "flex" : "none");
     };
 
 
@@ -62,23 +62,19 @@ const MenuBannerProvider = ({ children }) => {
 
     useEffect(() => {
         if (windowWidth <= 375) {
-            setBanner1(() => banner1Mobile);
-            setBanner2(() => banner2Mobile);
-            setBanner3(() => banner3Mobile);
+            setBanner1(banner1Mobile);
+            setBanner2(banner2Mobile);
+            setBanner3(banner3Mobile);
         } else if (windowWidth <= 768) {
-            setBanner1(() => banner1Tablet);
-            setBanner2(() => banner2Tablet);
-            setBanner3(() => banner3Tablet);
+            setBanner1(banner1Tablet);
+            setBanner2(banner2Tablet);
+            setBanner3(banner3Tablet);
         } else {
-            setBanner1(() => banner1Desktop);
-            setBanner2(() => banner2Desktop);
-            setBanner3(() => banner3Desktop);
+            setBanner1(banner1Desktop);
+            setBanner2(banner2Desktop);
+            setBanner3(banner3Desktop);
         }
     }, [windowWidth, setBanner1, setBanner2, setBanner3]);
-
-
-
-
     
 
 
