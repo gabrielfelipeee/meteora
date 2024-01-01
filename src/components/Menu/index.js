@@ -24,7 +24,7 @@ const Menu = () => {
     ];
 
     const menuIcons = {
-        size: 32,
+        size: 36,
         onClick: toggleMenu
     };
 
@@ -44,12 +44,14 @@ const Menu = () => {
                 <ul style={{ display: displayMenu }}>
                     <IoClose className="close-menu" {...menuIcons} />
                     {menuItems.map(item =>
-                        <li key={item.page}>
+                        <li key={item.page} onClick={() => {
+                            if(windowWidth <= 950) {
+                                toggleMenu();
+                            }
+                        }}>
                             <MenuLink
                                 page={item.page}
                                 link={item.link}
-                                closeMenu={toggleMenu}
-                                windowWidth={windowWidth}
                             />
                         </li>
                     )}

@@ -84,7 +84,7 @@ const InfoProduct = ({ image, name, description, price, size, colors, id }) => {
                             closeDetails()
                         }}
                     >
-                        Adicionar à sacola
+                        Adicionar ao carrinho
                     </button>
                 </div>
             </div>

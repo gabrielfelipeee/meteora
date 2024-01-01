@@ -30,6 +30,9 @@ const MenuBannerProvider = ({ children }) => {
     const [banner2, setBanner2] = useState();
     const [banner3, setBanner3] = useState();
 
+
+
+
     useEffect(() => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
@@ -50,10 +53,17 @@ const MenuBannerProvider = ({ children }) => {
         } else {
             setLogo(logoDesktop);
         }
+
+        if (windowWidth >= 950) {
+            setDisplayMenu("flex");
+        } else {
+            setDisplayMenu("");
+        }
     }, [windowWidth]);
 
 
     const toggleMenu = () => {
+
         setDisplayMenu(display => display === "" || display === "none" ? display = "flex" : "none");
     };
 
