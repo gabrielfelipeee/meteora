@@ -34,6 +34,7 @@
             top: 0;
             right: 0;
             display: none;
+            align-items: flex-start;
             flex-direction: column;
             list-style: none;
             background-color: $color-dark_grey;
@@ -45,8 +46,28 @@
                     padding-bottom: .8rem;
                     margin-bottom: .8rem;
                 }
-                &:last-child {
-                    text-align: center;
+
+                .box-cart {
+                    position: relative;
+                    padding: 0;
+         
+                    .amount {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: -8px;
+                        right: -8px;
+                        background-color: $color-green;
+                        color: $color-dark_grey;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        padding: 1px;
+                    }
+                    .cart {
+                        font-size: 32px;
+                    }
                 }
             }
         }
@@ -139,127 +160,3 @@
         }
     }
 }
-
-
-/*
-@import '../../styles/abstract/variables.scss';
-
-
-.box-menu {
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $color-black;
-        padding: 20px 12px;
-        z-index: 2;
-
-        .logo_menu {
-            display: flex;
-            justify-content: space-between;
-            line-height: 0;
-
-            img {
-                cursor: pointer;
-            }
-        }
-
-        ul {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 20px;
-            justify-content: center;
-            list-style: none;
-        }
-    }
-
-    form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-        padding: 24px 30px;
-        font-size: 1rem;
-
-        input {
-            border: 2px solid $color-dark-grey;
-            outline: none;
-            padding: 10px 12px;
-        }
-
-        input[type="text"] {
-            width: 70%;
-        }
-
-        input[type="submit"] {
-            background-color: inherit;
-            cursor: pointer;
-        }
-    }
-}
-
-
-@media screen and (min-width: 950px) {
-    .box-menu {
-        position: static;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: $color-black;
-
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 32px;
-
-            .logo_menu {
-                .menu {
-                    display: none;
-                }
-            }
-
-            ul {
-                position: static;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 20px;
-                background-color: inherit;
-                padding: 0;
-
-                li {
-                    &:nth-child(-n+3) {
-                        padding-bottom: 0;
-                        border-bottom: 0;
-                        margin-bottom: 0;
-                    }
-                    &:last-child {
-                        margin-left: 32px;
-                    }
-                }
-
-                .close-menu {
-                    display: none;
-
-                }
-            }
-        }
-    }
-
-
-    form {
-        width: 40%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-
-        input[type="submit"] {
-            justify-content: flex-end;
-            text-align: right;
-            color: $color-white;
-        }
-    }
-}
-
-*/

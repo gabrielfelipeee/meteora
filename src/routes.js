@@ -24,9 +24,7 @@ function routes() {
                   <Route
                     path="/"
                     element={
-
                       <Home />
-
                     }
                   />
                   <Route

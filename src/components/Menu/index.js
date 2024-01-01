@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { PiShoppingCartSimpleThin } from "react-icons/pi";
 import './styles.scss';
@@ -9,18 +9,27 @@ import { useMenuBannerContext } from "../../commom/context/Menu_Banner";
 
 import MenuLink from "./MenuLink";
 import { useProductSearchContext } from "../../commom/context/ProductSearch";
+import { useCartContext } from "../../commom/context/Cart";
 
 
 
 const Menu = () => {
     const navigate = useNavigate();
+    const location = useLocation();
     const { logo, toggleMenu, displayMenu, windowWidth } = useMenuBannerContext();
     const { handleSubmit, handleChange, textSearch } = useProductSearchContext();
+    const { cart } = useCartContext();
 
     const menuItems = [
         { page: 'Início', link: '/' },
         { page: 'Favoritos', link: '/favoritos' },
-        { page: <PiShoppingCartSimpleThin size={32}/>, link: '/carrinho' }
+        {
+            page: <div className="box-cart">
+                <PiShoppingCartSimpleThin className="cart" />
+                {cart.length >= 1 && <div className="amount">{cart.length}</div>}
+            </div>,
+            link: '/carrinho'
+        }
     ];
 
     const menuIcons = {
@@ -45,7 +54,7 @@ const Menu = () => {
                     <IoClose className="close-menu" {...menuIcons} />
                     {menuItems.map(item =>
                         <li key={item.page} onClick={() => {
-                            if(windowWidth <= 950) {
+                            if (windowWidth <= 950) {
                                 toggleMenu();
                             }
                         }}>
@@ -57,18 +66,20 @@ const Menu = () => {
                     )}
                 </ul>
             </nav>
-            <form onSubmit={event => handleSubmit(event)}>
-                <input
-                    type="text"
-                    placeholder="Digite o produto"
-                    onChange={event => handleChange(event)}
-                    value={textSearch}
-                />
-                <input
-                    type="submit"
-                    value="Buscar"
-                />
-            </form>
+            {location.pathname === '/' &&
+                <form onSubmit={event => handleSubmit(event)}>
+                    <input
+                        type="text"
+                        placeholder="Digite o produto"
+                        onChange={event => handleChange(event)}
+                        value={textSearch}
+                    />
+                    <input
+                        type="submit"
+                        value="Buscar"
+                    />
+                </form>
+            }
         </header>
     )
 };

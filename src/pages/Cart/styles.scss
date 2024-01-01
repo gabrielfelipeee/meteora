@@ -71,6 +71,25 @@
     }
 }
 
+.box-empty-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px );
+    color: $color_dark-grey;
+    
+    p {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .empty-cart {
+        font-size: 300px;
+    }
+}
+
+
 
 @media screen and (min-width: 1440px) {
     .box-cart {
