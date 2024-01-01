@@ -34,23 +34,20 @@ Participando desse projeto, pode-se vivenciar de forma prática as etapas de um 
 
 <div align="center">
 <h4 align="center">Mobile<h4>
-    <img alt="mobile preview" src="public/preview/mobile-preview.png">
+    <img  width="375px" alt="mobile preview" src="public/preview/meteora-mobile.jpg">
 </div>
 
-<br>
-
-<h4 align="center">Tablet<h4>
-<div align="center">
-
-![](public/preview/tablet-preview.png#vitrinedev)
-
-</div>
 <br>
 
 <h4 align="center">Desktop<h4>
-<div align="center">
-    <img alt="desktop preview" src="https://raw.githubusercontent.com/gabrielfelipeee/meteora/main/public/preview/meteora-desktop.png">
+<div align="center" max-width="500px">
+
+![](public/preview/meteora-tablet.jpg#vitrinedev)
+
 </div>
+<br>
+
+
 
 <hr>
 
