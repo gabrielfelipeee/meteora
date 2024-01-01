@@ -10,6 +10,7 @@ import Menu from "./components/Menu";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import Favorites from "./pages/Favorites";
+import Footer from "./components/Footer";
 
 function routes() {
   return (
@@ -42,6 +43,7 @@ function routes() {
 
 
                 </Routes>
+                <Footer />
               </CategoriesProvider>
             </InfoProductProvider>
           </CartProvider>
